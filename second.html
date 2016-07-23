@@ -1,0 +1,288 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Home</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	
+    <!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/zerogrid1.css">
+	<link rel="stylesheet" href="css/style1.css">
+    <link rel="stylesheet" href="css/responsive1.css">
+	
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/component1.css" />
+		
+	<script>
+	 // tabbed content
+    // http://www.entheosweb.com/tutorials/css/tabs.asp
+    $(".tab_content").hide();
+    $(".tab_content:first").show();
+
+  /* if in tab mode */
+    $("ul.tabs li").click(function() {
+		
+      $(".tab_content").hide();
+      var activeTab = $(this).attr("rel"); 
+      $("#"+activeTab).fadeIn();		
+		
+      $("ul.tabs li").removeClass("active");
+      $(this).addClass("active");
+
+	  $(".tab_drawer_heading").removeClass("d_active");
+	  $(".tab_drawer_heading[rel^='"+activeTab+"']").addClass("d_active");
+	  
+    });
+	/* if in drawer mode */
+	$(".tab_drawer_heading").click(function() {
+      
+      $(".tab_content").hide();
+      var d_activeTab = $(this).attr("rel"); 
+      $("#"+d_activeTab).fadeIn();
+	  
+	  $(".tab_drawer_heading").removeClass("d_active");
+      $(this).addClass("d_active");
+	  
+	  $("ul.tabs li").removeClass("active");
+	  $("ul.tabs li[rel^='"+d_activeTab+"']").addClass("active");
+    });
+	
+	
+	/* Extra class "tab_last" 
+	   to add border to right side
+	   of last tab */
+	$('ul.tabs li').last().addClass("tab_last");
+	</script>
+</head>
+<body>
+<!--------------Header--------------->
+<header class="zerogrid">
+
+	<div class="wrap-header">
+		<div class="col-2-5"><div id="logo"><a href="#"><img src="./images/logo.png"/></a></div></div>
+		<div class="col-3-5">
+        <nav>
+			<div class="wrap-nav">
+            
+				<div class="menu">
+					<ul>
+						<li><a href="#">Congreso<br>
+2016</a></li>
+						<li style="border-bottom: 7px solid #42a4f5;"><a href="#">? Quien es<br>
+mi representante</a></li>
+						<li><a href="#">Iniciativas de<br>
+Ley</a></li>
+                        <li><a href="#">Adopta a tu<br>
+Diputado</a></li>
+						<li><a href="#">Peguntales/<br>
+Escribeles</a></li>
+						<li><a href="#">Ranking</a></li>
+                       
+						
+					</ul>
+                    
+				</div>
+				
+				<div class="minimenu"><div>MENU</div>
+					<select onchange="location=this.value">
+						<option></option>
+						<option value="#">Congreso
+2016</option>
+						<option value="#">? Quien es
+mi representante</option>
+						<option value="#">Iniciativas de
+Ley</option>
+						<option value="#">Adopta a tu
+Diputado</option>
+<option value="#">Peguntales Escribeles</option>
+						<option value="#">Ranking</option>
+					</select>
+				</div>
+                
+               
+                
+                </div>
+			
+		</nav>
+        </div>
+        <div class="wrap-header" style=" height:30px;     margin-top: 5px;">
+		<div class="col-1-5" style=" float:right;"><div class="social"><a href="#" class="fb"><i class="fa fa-facebook" style="margin-top:4px;"></i></a><a href="#" class="tw"><i class="fa fa-twitter" style="margin-top:4px;"></i></a></div></div>
+		
+	</div>
+	</div>
+</header>
+
+
+<!--------------Content--------------->
+<section id="content">
+	<div class="wrap-content zerogrid">
+		<div class="row block02" style="padding:10px 0px; background-image:none;    width: 75%;
+    margin: 0 auto;">
+        <h3 class="new" style="padding-bottom:0; text-align:center;">Christian Jacques Boussinot Nuila</h3>
+        </div>
+		
+		<div class="row block02" style="padding:30px 0px; background-image:none;">
+        <h3 class="new">Christian Jacques Boussinot Nuila</h3>
+        
+        <div class="col-1-5"><p><img src="images/p.png"/></p></div><div class="col-2-5"><p class="blue">Distrito Guatemala&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2008-2012
+ </p>
+ <p class="blue">Cargo:Diputado
+ </p>
+ <p class="blue">Institucion Congreso de Guatemala:
+ </p>
+ <p class="blue">Distrito Guatemala&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2008-2012
+ </p>
+ <p class="blue">Distrito Guatemala&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2008-2012
+ </p>
+ <p class="blue">Distrito Guatemala&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2008-2012
+ </p>
+ <p class="blue">Distrito Guatemala&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;2008-2012
+ </p>
+ 
+ 
+ </div>
+ 
+ <div class="col-2-5"><p>
+
+
+ <img src="images/v.png"/>
+ 
+ </p><br>
+
+
+ <p class="te"><i class="fa fa-envelope" aria-hidden="true" style="color:#78c1ec; margin-top: 7px; margin-right:10px;"></i>midiputado@gmail.com</p>
+ <p class="te"><i class="fa fa-mobile" aria-hidden="true" style="    color: #78c1ec;
+    margin-right: 11px;
+    font-size: 25px;
+    margin-left: 3px;"></i>2244-7878 Ext.Ext.1328-2007</p>
+ <p class="te"><i class="fa fa-map-marker" aria-hidden="true" style="    color: #78c1ec;
+    margin-right: 11px;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-left: 2px;"></i>Anexo,Casa Larrazabal 1er.nivel</p>
+ 
+ 
+ </div></div>
+	<div class="row block01">
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<img src="images/a1.png" />
+					
+				</div>
+			</div>
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<img src="images/a2.png" />
+					
+				</div>
+			</div>
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<img src="images/a3.png" />
+					
+				</div>
+			</div>
+			<div class="col-1-4">
+				<div class="wrap-col">
+					<img src="images/a4.png" />
+					
+				</div>
+			</div>
+		</div>
+        <div class="row block02" style=" background:#78c1ec; box-sizing: border-box;
+    border-radius: 10px;     padding: 30px;">
+        <ul class="tabs">
+  <li class="active" rel="tab1">Biografia</li>
+  
+</ul>
+<div class="tab_container">
+  <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
+  <div id="tab1" class="tab_content">
+ 
+    <p>Aqui colocar la biografia del serior</p>
+  </div>
+  <!-- #tab1 -->
+  
+</div>
+<!-- .tab_container -->
+</div>
+        
+   
+ 
+ 
+			<div class="row block02" style=" background:#f2f2f2;">
+        <h3 class="new" style="text-align:center;">DISQUS</h3>
+        
+   
+ 
+ </div>
+	</div>
+</section>
+<!--------------Footer--------------->
+<footer>
+	<div class="wrap-footer zerogrid">
+		<div class="row">
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Ayúdanos:
+</h2></div>
+						<div class="content">
+							<p>- Voluntario<br>
+
+- Donación</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Un proyecto desarrollado por:
+</h2></div>
+						<div class="content">
+							<div class="gallery">
+								<a href="#"><img src="images/r.png" /></a>
+								
+							</div>
+						</div>
+                        <div class="heading"><h2>Con el apoyo de:
+</h2></div>
+					</div>
+				</div>
+			</div>
+            <div class="col-1-3">
+				<div class="wrap-col">
+					<div class="box">
+						<div class="heading"><h2>Contáctanos</h2></div>
+						<div class="content">
+							<p>Info@redciudadana.org.gt
+<br><br>
+
+
+12 calle 1-25 zona 10, <br>
+
+Edificio Géminis 10,<br>
+ 
+Edificio Torre Norte,<br>
+ 
+Guatemala, Guatemala</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+</footer>
+ 
+</body></html>
